@@ -1,5 +1,8 @@
-json.array! @posts do |post|
+json.array! @posts, :id, :title
 
-  json.(post, :id, :title, :body)
-
-end
+# json.array! @posts do |post|
+#   json.post do
+#     json.id post.id
+#     json.title post.title
+#   end
+# end
